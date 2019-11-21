@@ -46,17 +46,21 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
-  updateProduct(id: string, product: Product) {
-    /*
-    const product: Product = {
-      title: 'nuevo desde angular',
-      image: 'assets/images/camiseta.png',
+  updateProduct() {
+    const updateProduct: Partial<Product> = {
       price: 500,
-      description: 'description of product'
+      description: 'edicion actualizando titulo'
     };
-    this.productsService.updateProduct(id, )
+    this.productsService.updateProduct('2', updateProduct)
     .subscribe(product => {
+      console.log(product);
+    });
+  }
 
-    })*/
+  deleteProduct() {
+    this.productsService.deleteProduct('2').
+    subscribe(rta => {
+      console.log(rta);
+    });
   }
 }
