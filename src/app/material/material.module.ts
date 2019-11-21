@@ -5,6 +5,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [],
@@ -13,13 +17,21 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule
   ],
   exports: [
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCardModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule
   ]
 })
 export class MaterialModule { }
