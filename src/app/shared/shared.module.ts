@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { HighlightDirective } from './pipes/highlight/highlight.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartComponent } from '../cart/cart.component';
-import { RouterModule } from '@angular/router';
+
 import { MaterialModule } from '../material/material.module';
 
 
@@ -27,7 +30,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

@@ -31,3 +31,19 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.crop-image{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+        position: absolute;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+    }
+}
